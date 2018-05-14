@@ -13,7 +13,7 @@ export class Service {
     }
 
     private configureMiddleware(): void {
-        this.express.use(logger("development"));
+        this.express.use(logger("dev"));
         this.express.use(bodyParser.json());
         this.express.use(bodyParser.urlencoded({ extended: false }));
     }
