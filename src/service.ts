@@ -26,5 +26,7 @@ export class Service {
         router.get("/health", (_request, response, _next) => {
             response.sendStatus(200);
         });
+
+        this.express.use("/", router);
     }
 }
